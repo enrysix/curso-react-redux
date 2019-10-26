@@ -9,6 +9,7 @@ import { Provider } from 'react-redux';
 import Login from './Login/Login';
 import Posts from './Posts/Posts';
 import configureStore from './configStore';
+import Account from './Account/Account';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path='/posts'>
             <Posts />
+          </Route>
+          <Route path='/account'>
+            <Account />
           </Route>
         </Switch>
       </Router>
